@@ -1,3 +1,7 @@
+if ($('#template-form').length === 0) {
+  return;
+}
+
 if($('#outfile').get(0)){
     var str = $('#outfile').val();
     var str = str.split('.');
