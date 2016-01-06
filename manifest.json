@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Syntax Hightlight for MovableType.net",
+  "version": "1.0.8",
+  "description": "MovableType.netのテンプレートエディタをシンタックスハイライトします。",
+  "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+  "content_scripts": [
+    {
+      "matches": ["https://movabletype.net/*"],
+      "js": ["jquery-2.1.4.min.js",
+             "lib/codemirror.js",
+             "mode/xml/xml.js",
+             "mode/javascript/javascript.js",
+             "mode/css/css.js",
+             "mode/htmlmixed/htmlmixed.js",
+             "script.js"
+            ],
+      "css":["lib/codemirror.css","style.css"]
+    }
+  ]
+}
