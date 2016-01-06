@@ -1,0 +1,7 @@
+{
+    "reload_autocomplete_context": { "message": "Reload autocomplete context" },
+    "header_key_bindings": { "message": "Key Bindings" },
+    "label_autocomplete": { "message": "Autocomplete" },
+    "help_message_autocomplete": { "message": "e.g. Ctrl-Space,Ctrl-P" },
+    "save_and_close": { "message": "Save and Close" }
+}
