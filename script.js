@@ -1,3 +1,5 @@
+chrome.runtime.sendMessage({action: "getLocalStorage"}, function(extensionLocalStorage) {
+
 if ($('#template-form').length === 0) {
   return;
 }
@@ -56,4 +58,6 @@ $(function() {
         syncEditor();
         $('form#template-form').val('save');
     });
+});
+
 });
