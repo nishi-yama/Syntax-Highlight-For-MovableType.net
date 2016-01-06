@@ -13,6 +13,8 @@ if($('#outfile').get(0)){
         var lang = "lang:html";
     } else if(str[str.length -1].toLowerCase() == 'html') {
         var lang = "lang:html";
+    } else {
+        var lang = "lang:html";
     }
 } else {
     var lang = "lang:html";
