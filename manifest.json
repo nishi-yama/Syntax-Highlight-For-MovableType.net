@@ -17,9 +17,16 @@
              "mode/javascript/javascript.js",
              "mode/css/css.js",
              "mode/htmlmixed/htmlmixed.js",
+             "addon/hint/show-hint.js",
+             "movabletype-hint/attributes.js",
+             "movabletype-hint/tags.js",
+             "movabletype-hint.js",
              "script.js"
             ],
-      "css":["lib/codemirror.css","style.css"]
+      "css":["lib/codemirror.css",
+             "addon/hint/show-hint.css",
+             "style.css"
+            ]
     }
   ],
   "background": {

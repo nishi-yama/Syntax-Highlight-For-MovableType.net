@@ -31,8 +31,12 @@ var options = $('#text').attr('mt:editor-options');
 var editor_params = {
     lineNumbers: true,
     lineWrapping: false,
-    indentUnit: 0
+    indentUnit: 0,
+    extraKeys: {},
 };
+$.each((extensionLocalStorage['autocomplete-keys'] || 'Ctrl-Space,Ctrl-P').split(','), function() {
+  editor_params['extraKeys'][$.trim(this)] = 'autocomplete';
+});
 
 if (options.match('lang:css')) {
     editor_params['mode'] = "text/css";
