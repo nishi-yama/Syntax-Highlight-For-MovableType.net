@@ -1,3 +1,9 @@
+chrome.runtime.sendMessage({action: "getLocalStorage"}, function(extensionLocalStorage) {
+
+if ($('#template-form').length === 0) {
+  return;
+}
+
 if($('#outfile').get(0)){
     var str = $('#outfile').val();
     var str = str.split('.');
@@ -8,6 +14,8 @@ if($('#outfile').get(0)){
     } else if(str[str.length -1].toLowerCase() == 'xml') {
         var lang = "lang:html";
     } else if(str[str.length -1].toLowerCase() == 'html') {
+        var lang = "lang:html";
+    } else {
         var lang = "lang:html";
     }
 } else {
@@ -23,8 +31,12 @@ var options = $('#text').attr('mt:editor-options');
 var editor_params = {
     lineNumbers: true,
     lineWrapping: false,
-    indentUnit: 0
+    indentUnit: 0,
+    extraKeys: {},
 };
+$.each((extensionLocalStorage['autocomplete-keys'] || 'Ctrl-Space,Ctrl-P').split(','), function() {
+  editor_params['extraKeys'][$.trim(this)] = 'autocomplete';
+});
 
 if (options.match('lang:css')) {
     editor_params['mode'] = "text/css";
@@ -50,4 +62,6 @@ $(function() {
         syncEditor();
         $('form#template-form').val('save');
     });
+});
+
 });

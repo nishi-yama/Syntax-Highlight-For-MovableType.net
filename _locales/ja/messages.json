@@ -1,0 +1,7 @@
+{
+    "reload_autocomplete_context": { "message": "補完情報を再読み込み" },
+    "header_key_bindings": { "message": "キーバインド" },
+    "label_autocomplete": { "message": "補完" },
+    "help_message_autocomplete": { "message": "\",\" 区切りで複数指定できます" },
+    "save_and_close": { "message": "保存して閉じる" }
+}
