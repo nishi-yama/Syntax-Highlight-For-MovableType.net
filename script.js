@@ -37,6 +37,9 @@ var editor_params = {
 $.each((extensionLocalStorage['autocomplete-keys'] || 'Ctrl-Space,Ctrl-P').split(','), function() {
   editor_params['extraKeys'][$.trim(this)] = 'autocomplete';
 });
+$.each((extensionLocalStorage['findPersistent-keys'] || 'Alt-A').split(','), function() {
+  editor_params['extraKeys'][$.trim(this)] = 'findPersistent';
+});
 
 if (options.match('lang:css')) {
     editor_params['mode'] = "text/css";

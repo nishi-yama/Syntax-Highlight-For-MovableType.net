@@ -1,7 +1,9 @@
 {
     "reload_autocomplete_context": { "message": "補完情報を再読み込み" },
-    "header_key_bindings": { "message": "キーバインド" },
-    "label_autocomplete": { "message": "補完" },
-    "help_message_autocomplete": { "message": "\",\" 区切りで複数指定できます" },
-    "save_and_close": { "message": "保存して閉じる" }
+    "setting_for_key_bindings": { "message": "キーバインドの設定" },
+    "label_autocomplete": { "message": "タグ補完" },
+    "help_message_autocomplete": { "message": "MTML入力途中で使用するとMTML候補を表示します。<br />\",\" 区切りで複数指定できます。" },
+    "label_findPersistent": { "message": "連続検索" },
+    "help_message_findPersistent": { "message": "テキストエリア内で使用するとテンプレート内を連続して検索できます。<br />\",\" 区切りで複数指定できます。" },
+    "save_and_close": { "message": " 保存して閉じる " }
 }

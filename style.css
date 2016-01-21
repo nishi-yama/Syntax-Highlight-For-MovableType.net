@@ -23,3 +23,8 @@
 .cm-s-default span.cm-mt-tag {
     color: #A70;
 }
+
+.cm-searching {
+  background: #ffa;
+  background: rgba(255, 255, 0, .4);
+}

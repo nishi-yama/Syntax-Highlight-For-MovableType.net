@@ -4,22 +4,25 @@
     <meta charset="utf-8">
     <script src="jquery-2.1.4.min.js"></script>
     <script src="options.js"></script>
-    <style type="text/css">
-      .help {
-        color: #666;
-      }
-    </style>
+    <link rel="stylesheet" href="./option.css">
+
   </head>
   <body>
-    <h1>Syntax Hightlight for MovableType.net</h1>
-    <h2 data-message="header_key_bindings"></h2>
+    <h1><img src="./icon48.png" class="icon" /> Syntax Hightlight for MovableType.net</h1>
 
-    <label for="autocomplete-keys"><span data-message="label_autocomplete"></span></label>: 
-    <input type="text" id="autocomplete-keys" name="autocomplete-keys" data-default-value="Ctrl-Space,Ctrl-P"/><br />
-    <span class="help" data-message="help_message_autocomplete"></span><br />
+    <h2 data-message="setting_for_key_bindings"></h2>
 
-    <br />
-    <br />
-    <button type="submit" data-message="save_and_close"></button>
+    <dl id="option">
+      <dt><label for="autocomplete-keys"><span data-message="label_autocomplete"></span></label></dt>
+      <dd><input type="text" id="autocomplete-keys" name="autocomplete-keys" data-default-value="Ctrl-Space,Ctrl-P"/><br />
+      <span class="help" data-message="help_message_autocomplete"></span></dd>
+
+      <dt><label for="findPersistent-keys"><span data-message="label_findPersistent"></span></label></dt>
+      <dd><input type="text" id="findPersistent-keys" name="findPersistent-keys" data-default-value="Alt-A"/><br />
+      <span class="help" data-message="help_message_findPersistent"></span></dd>
+    </dl>
+
+    <p><button type="submit" data-message="save_and_close"></button></p>
+
   </body>
 </html>

@@ -1,0 +1,58 @@
+/** Style of "option.html" **/
+body {
+    font-size: 100%;
+    padding:0 20px;
+}
+h1 img.icon{
+    vertical-align: middle;
+}
+.help {
+    color: #aaa;
+}
+
+dl,dt,dd {
+    margin: 0;
+    padding: 0;
+}
+dl {
+    border: 1px solid #333;
+    border-top: none;
+    background: #e7e7e7;
+}
+dt,dd {
+    padding: 10px;
+}
+dt {
+    border-top: 1px solid #333;
+    clear: left;
+    float: left;
+    width: 150px;
+}
+dd {
+    margin-left: 150px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    background: #fff;
+}
+
+dd.hint{
+    
+}
+
+input[type="text"] {
+    padding:10px;
+    font-size:1.3em;
+    font-family:Arial, sans-serif;
+    border:solid 1px #ccc;
+    width:400px;
+    border-radius: 3px;
+    margin-left: -10px;
+}
+
+button[type="submit"]{
+    display: block;
+    margin:0 auto;
+    font-size: 100%;
+    border-radius: 3px;
+    text-shadow: 0px -1px 1px rgba(255, 255, 255, 0.8);
+}

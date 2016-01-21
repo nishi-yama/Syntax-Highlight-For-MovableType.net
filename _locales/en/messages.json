@@ -1,7 +1,9 @@
 {
     "reload_autocomplete_context": { "message": "Reload autocomplete context" },
-    "header_key_bindings": { "message": "Key Bindings" },
+    "setting_for_key_bindings": { "message": "Key Bindings" },
     "label_autocomplete": { "message": "Autocomplete" },
     "help_message_autocomplete": { "message": "e.g. Ctrl-Space,Ctrl-P" },
-    "save_and_close": { "message": "Save and Close" }
+    "label_findPersistent": { "message": "Find Persistent" },
+    "help_message_findPersistent": { "message": "e.g. Alt-A,Alt-S" },
+    "save_and_close": { "message": " Save and Close " }
 }
