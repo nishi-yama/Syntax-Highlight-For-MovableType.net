@@ -61,7 +61,7 @@ function syncEditor() {
 }
 
 $(function() {
-    $('input#submit').click(function() {
+    $('input#save-template,input#publish-template,input#update-template').click(function() {
         syncEditor();
         $('form#template-form').val('save');
     });

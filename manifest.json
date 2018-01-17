@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Syntax Hightlight for MovableType.net",
-  "version": "1.1.6",
+  "version": "1.1.8",
   "description": "MovableType.netのテンプレートエディタをシンタックスハイライトします。",
   "icons": {
         "16": "icon16.png",
